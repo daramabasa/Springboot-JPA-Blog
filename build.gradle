@@ -27,8 +27,10 @@ dependencies {
 	implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api' //스프링부트 3.0 이상
 	implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl' //스프링부트 3.0 이상
 
-	implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
+	implementation "org.apache.tomcat.embed:tomcat-embed-jasper" //JSP 템플릿 엔진
 	//implementation "org.springframework.security:spring-security-taglibs"
+
+	implementation "org.projectlombok:lombok"
 
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
