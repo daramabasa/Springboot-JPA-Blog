@@ -23,7 +23,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 프로젝트에서 연결된 DB의 넘버링 전략을 따라간다.
     private int id; //시퀀스, auto_increment
 
-    @Column(nullable = false, length = 30) // NULL 방지, 30자 제한
+    @Column(nullable = false, length = 30, unique = true) // NULL 방지, 30자 제한
     private String username; // 아이디
 
     @Column(nullable = false, length = 100) // NULL 방지, 100자 제한, 암호화된 비밀번호를 넣을 거라 넉넉하게
