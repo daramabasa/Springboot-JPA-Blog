@@ -29,7 +29,7 @@ public class Board {
     @Column(columnDefinition = "LONGTEXT")
     private String content; // 섬머노트 라이브러리 <html> 태그가 섞여서 디자인 됨
 
-    @ColumnDefault("0")
+    //@ColumnDefault("0")
     private int count; // 조회수
 
     @ManyToOne(fetch = FetchType.EAGER) // Many = Board, One = User, Board를 select 하면 User도 바로 들고 옮
